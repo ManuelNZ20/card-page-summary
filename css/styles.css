@@ -1,0 +1,108 @@
+:root {
+  /* ### Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  /* ### Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --font-family: "Red Hat Display", sans-serif;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-family);
+    color:var(--dark-blue);
+    background-color:var(--pale-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction:column;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+.main-card {
+  width:90%;
+  max-width: 380px;
+  height:580px;
+  background-color:var(--very-pale-blue);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.info-card-container {
+  padding:25px;
+  gap:25px;
+}
+.img-illustration {
+  width: 100%;
+  object-fit: cover;
+}
+.title-card {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+.paragraph  {
+  color:var(--desaturated-blue);
+  font-size: 1.05em;
+  text-align: center;
+}
+
+.mini-card-money {
+  flex-direction: row;
+  background-color:hsla(225, 100%, 94%, 0.511);
+  padding:15px 0px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+.icon-music {
+  width: 60px;
+}
+.card-info-money {
+  gap:10px;
+  align-items: center;
+  flex-direction: row;
+  font-weight:bolder;
+}
+.info-money {
+  color:var(--desaturated-blue);
+}
+.link {
+  color:var(--bright-blue);
+  font-weight: bolder;
+}
+.btn-direction {
+  gap:5px;
+}
+.btn {
+  font-size: 1em;
+  font-weight: bolder;
+  height: 45px;
+  border:none;
+  border-radius: 10px;
+  background-color: transparent;
+  color:var(--desaturated-blue);
+}
+.btn-proceed {
+  color:var(--pale-blue);
+  background-color: var(--bright-blue);
+  box-shadow: 0 10px 10px 3px hsla(245, 75%, 52%, 0.189);
+}
+
+.btn-cancel {
+  box-shadow: none;
+}
